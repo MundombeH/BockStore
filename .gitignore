@@ -1,23 +1,34 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Arquivos de build
+/target/
+/build/
 
-### STS ###
-.apt_generated
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Logs e cache
+*.log
+logs/
+out/
+tmp/
+*.tmp
+*.bak
+
+# Arquivos de configuração de IDEs
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Eclipse / Spring Tool Suite ###
+.project
 .classpath
 .factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+.settings/
+.springBeans/
+.sts4-cache/
 
 ### NetBeans ###
 /nbproject/private/
@@ -25,9 +36,18 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos específicos
+HELP.md
+
+# Excluir os targets internos
+!**/src/main/**/target/
+!**/src/test/**/target/
+
